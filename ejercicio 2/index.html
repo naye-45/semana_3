@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contraseña segura</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer ></script>
+</head>
+<body>
+    <main class="container">
+    <h2>Registro de cuenta</h2>
+    
+    <form id="formRegistro">
+      <div class="input-group">
+        <label for="password">Contraseña</label>
+        <div class="password-wrapper">
+          <input type="password" id="password" placeholder="Ingresa tu contraseña">
+          <button type="button" id="btnToggle">👁 Mostrar</button>
+        </div>
+      </div>
+
+      <!-- Lista de requisitos -->
+      <ul class="requisitos-list">
+        <li id="req-longitud" class="invalido">Mínimo 8 caracteres</li>
+        <li id="req-mayuscula" class="invalido">Al menos una mayúscula</li>
+        <li id="req-numero" class="invalido">Al menos un número</li>
+      </ul>
+
+      <button type="submit" id="btnSubmit">Crear cuenta</button>
+    </form>
+    
+    <p id="mensajeExito" class="oculto">¡Cuenta creada con éxito!</p>
+  </main>
+</body>
+</html>
